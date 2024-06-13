@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Digital Garden</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left sidebar -->
+    <div class="sidebar">
+      <!-- Dropdown Feature Start -->
+      <div id="dropdown-container">
+        <select id="category-dropdown" onchange="populateSubcategories()">
+          <option value="">Select a category</option>
+        </select>
+        <select id="subcategory-dropdown" onchange="populateFiles()">
+          <option value="">Select a subcategory</option>
+        </select>
+        <select id="files-dropdown">
+          <option value="">Select a file</option>
+        </select>
+      </div>
+      <!-- Dropdown Feature End -->
+    </div>
+    <!-- Main content -->
+    <div class="main-content">
+      <h1>My digital garden</h1>
+      <h2>Your first seed</h2>
+      <p>Last updated on June 13, 2024</p>
+      <h3>Welcome!</h3>
+      <p>This is your first note. You’ll find it in the <code>notes/</code> directory.</p>
+      <h3>Link syntax</h3>
+      <p>
+        To link to another note, you can use multiple syntaxes. The following four use the “double-bracket” notation 
+        (view the Markdown source file to see the underlying syntax).
+      </p>
+      <ul>
+        <li>Using the note title: <a href="#">a note about cats</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
